@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F3F3F3"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/menu_album_item_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="19dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#616161"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_play_next"
+        app:title="下一首"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_collect_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_collect"
+        app:title="收藏到歌单"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_download"
+        app:title="下载"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_comment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_comment"
+        app:title="评论"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_share"
+        app:title="分享"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_singer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_singer"
+        app:title="歌手"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_album_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_album"
+        app:title="专辑"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_video_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_video"
+        app:title="查看视频"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_ring_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_ring"
+        app:title="彩铃"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_album_item_delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_delete"
+        app:title="删除"
+        style="@style/PressedDarkBar"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <TextView
+        android:id="@+id/menu_songlist_item_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="19dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="#616161"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_songlist_item_setting_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_download"
+        app:title="下载"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_songlist_item_setting_share_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_share"
+        app:title="分享"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_songlist_item_setting_edit_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_edit"
+        app:title="编辑歌单信息"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/menu_songlist_item_setting_delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_delete"
+        app:title="删除"
+        style="@style/PressedDarkBar"/>
+</LinearLayout>

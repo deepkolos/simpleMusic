@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F3F3F3"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="19dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:text="创建的歌单"
+        android:textSize="14sp"
+        android:textColor="#616161"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/songlist_group_setting_create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_create"
+        app:title="创建新歌单"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/songlist_group_setting_manage_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_manage"
+        app:title="歌单管理"
+        style="@style/PressedDarkBar"/>
+
+    <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+        android:id="@+id/songlist_group_setting_recover_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout="@layout/view_bottom_popup_menu_item"
+        app:icon="@drawable/ic_menu_recover"
+        app:title="恢复歌单"
+        style="@style/PressedDarkBar"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topBarHeight">
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:onClick="backBtnClick"
+        style="@style/RippleBtn22"
+        android:src="@drawable/back_btn"/>
+
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.OverRollTextView
+            android:id="@+id/activity_music_player_topbar_song"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:textSize="18sp"
+            app:textColor="@color/white"
+            app:text="歌曲"/>
+
+        <TextView
+            android:id="@+id/activity_music_player_topbar_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_50p"
+            android:text="歌手"
+            android:drawableEnd="@drawable/ic_text_arrow_right_sized"/>
+    </LinearLayout>
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        style="@style/RippleBtn22"
+        android:src="@drawable/share_btn"
+        android:onClick="onShareBtnClick"/>
+</LinearLayout>

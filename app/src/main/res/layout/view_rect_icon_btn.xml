@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_rect_icon_btn_icon_container"
+        app:radius="5dp">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/view_rect_icon_btn_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/view_rect_icon_btn_icon_top_container"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rect_icon_btn_top_bg"/>
+
+            <TextView
+                android:id="@+id/view_rect_icon_btn_icon_top_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1107"
+                android:layout_gravity="end"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="9sp"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_small_ear_sized"
+                android:drawablePadding="3dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_rect_icon_btn_icon_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rect_icon_btn_button_bg"/>
+
+            <TextView
+                android:id="@+id/view_rect_icon_btn_icon_bottom_left_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="局座讲风云人物局座讲风云人物"
+                android:layout_gravity="start|bottom"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/view_rect_icon_btn_icon_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付费精品"
+            android:background="@drawable/rect_icon_btn_badge_top_left_bg"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp" />
+    </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+    
+    <TextView
+        android:id="@+id/view_rect_icon_btn_title"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:lines="2"
+        android:textSize="12sp"
+        android:ellipsize="end"/>
+</LinearLayout>

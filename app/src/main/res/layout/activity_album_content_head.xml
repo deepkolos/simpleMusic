@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_900">
+
+    <ImageView
+        android:id="@+id/activity_album_bg_blur"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        android:foreground="@color/grey_900_half_opacity"
+        android:layout_gravity="clip_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/topBarHeight"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!--album info-->
+        <LinearLayout
+            android:id="@+id/activity_album_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:radius="3dp">
+
+                <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                    android:id="@+id/activity_album_default_cover"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"/>
+
+                <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                    android:id="@+id/activity_album_cover"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"/>
+
+                <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info"
+                    android:layout_gravity="bottom|right"/>
+            </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_album_content_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="客官不可以"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    style="@style/RippleBarFg">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:radius="13dp">
+
+                            <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                                android:id="@+id/activity_album_content_creator_avatar"
+                                android:layout_width="26dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_launcher_background"/>
+                        </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+                        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:src="@drawable/ic_v_badge"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/activity_album_content_creator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="DeepKolos音乐"
+                        android:textColor="#DEDBDF"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--4 btn-->
+        <LinearLayout
+            android:id="@+id/activity_album_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="21dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <cn.deepkolos.simplemusic3.Widget.Button.AlbumButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:title="评论"
+                app:icon="@drawable/ic_little_comment"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                style="@style/RippleBtn27"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.AlbumButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:title="分享"
+                app:icon="@drawable/ic_little_share"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                style="@style/RippleBtn27"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.AlbumButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:title="下载"
+                app:icon="@drawable/ic_little_download"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                style="@style/RippleBtn27"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.AlbumButton
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:title="多选"
+                app:icon="@drawable/ic_little_multi_select"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                style="@style/RippleBtn27"/>
+
+        </LinearLayout>
+
+        <!--content-->
+        <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+            android:id="@+id/activity_album_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:topLeftRadius="10dp"
+            app:topRightRadius="10dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:background="@color/contentBg">
+
+                <include layout="@layout/activity_album_songlist_topbar"/>
+            </FrameLayout>
+        </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+    </LinearLayout>
+</FrameLayout>

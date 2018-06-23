@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="0dp"
+    style="@style/PressedDarkBar">
+
+    <LinearLayout
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/view_playlist_song_item_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/view_playlist_song_item_playIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_volume_red"
+            android:layout_marginEnd="9dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/view_playlist_song_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="deepkolos中文"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/view_playlist_song_item_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="10sp"
+            android:text=" - deepkolos中文"
+            android:textColor="#7A7A7A"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_toStartOf="@id/view_playlist_song_item_delete"
+        android:id="@+id/view_playlist_song_item_link"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
+        android:src="@drawable/ic_link"
+        android:layout_centerVertical="true"
+        style="@style/PressedLightBar"/>
+    
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view_playlist_song_item_delete"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_delete"
+        android:layout_centerVertical="true"
+        style="@style/PressedDarkBar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClipLayoutAttrs">
+        <attr name="radius" format="dimension"/>
+        <attr name="inset" format="dimension"/>
+        <attr name="topLeftRadius" format="dimension"/>
+        <attr name="topRightRadius" format="dimension"/>
+        <attr name="bottomRightRadius" format="dimension"/>
+        <attr name="bottomLeftRadius" format="dimension"/>
+        <attr name="topInset" format="dimension"/>
+        <attr name="leftInset" format="dimension"/>
+        <attr name="rightInset" format="dimension"/>
+        <attr name="bottomInset" format="dimension"/>
+    </declare-styleable>
+</resources>

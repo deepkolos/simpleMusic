@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_music_player">
+
+    <!--背景-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/play_page_default_bg"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:foreground="@color/grey_900_half_opacity"/>
+
+    <ImageView
+        android:id="@+id/activity_music_player_bg_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foreground="@color/grey_900_half_opacity"/>
+
+    <!--内容-->
+    <include layout="@layout/activity_music_player_content"/>
+
+    <!--顶栏-->
+    <include layout="@layout/activity_music_player_topbar"/>
+</FrameLayout>

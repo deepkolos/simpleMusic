@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="white_8p">#14FFFFFF</color>
+    <color name="white_16p">#29FFFFFF</color>
+    <color name="white_24p">#3DFFFFFF</color>
+    <color name="white_50p">#80FFFFFF</color>
+    <color name="white_96p">#F5FFFFFF</color>
+    <color name="black">@android:color/black</color>
+    <color name="black_50p">#80000000</color>
+    <color name="red">#F44336</color>
+    <color name="topBarRed">#e04339</color>
+    <color name="red_30p">#4CF44336</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_50p">#809E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_700_96p">#F5616161</color>
+    <color name="grey_300_96p">#F5E0E0E0</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_900_96p">#F5212121</color>
+
+    <color name="seekBarBg">#D33A31</color>
+    <color name="seekBarProgress">#919090</color>
+
+    <color name="volumeSeekBarBg">#7D7C7B</color>
+    <color name="volumeSeekBarProgress">#BEBDBD</color>
+    <color name="bottomBarBg">#f9ffffff</color>
+    <color name="bottomBarEdgeBg">#f0ffffff</color>
+    <color name="divider">#DADCDD</color>
+    <color name="contentBg">#F2F4F5</color>
+    <color name="redBtnBg">#E7483D</color>
+    <color name="pressDarkBg">#2000</color>
+    <color name="pressLightBg">#2fff</color>
+    <color name="transparentBg">#0000</color>
+
+    <color name="TextGrey">#919293</color>
+    <color name="ScrollBarThumb">#4000</color>
+
+    <color name="grey_900_half_opacity">#77212121</color>
+
+</resources>

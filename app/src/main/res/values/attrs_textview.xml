@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewAttrs">
+        <attr name="text" format="string|reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textRollSpeed" format="dimension"/>
+        <attr name="textRollStartDelay" format="integer"/>
+    </declare-styleable>
+</resources>

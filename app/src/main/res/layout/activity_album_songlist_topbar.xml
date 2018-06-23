@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="46dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/activity_album_collection_btn"
+        style="@style/RippleBarFg">
+
+        <View
+            android:id="@+id/activity_album_songlist_topBar_play_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_little_play"/>
+
+        <TextView
+            android:id="@+id/activity_album_songlist_topBar_playAll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/activity_album_songlist_topBar_play_icon"
+            android:textSize="15sp"
+            android:text="播放全部"/>
+
+        <TextView
+            android:id="@+id/activity_album_songlist_topBar_playAll_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/activity_album_songlist_topBar_playAll_text"
+            android:textColor="@color/TextGrey"
+            android:textSize="14sp"
+            android:text="(共1107首)"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_album_collection_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:text="+ 收藏(1107)"
+        android:textSize="15sp"
+        android:background="@color/redBtnBg"
+        android:textColor="@color/white"
+        style="@style/RippleBarFg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

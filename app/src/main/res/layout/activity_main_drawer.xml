@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="296dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="#201F24"
+        android:orientation="vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="9dp"
+            app:radius="32dp">
+
+            <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deepkolos"/>
+        </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DeepKolos"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="6dp"
+        android:orientation="vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout="@layout/view_drawer_button"
+            app:title="停止定时播放"
+            app:icon="@drawable/ic_little_clock"
+            style="@style/RippleBarFg"/>
+
+        <!--<cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout="@layout/view_drawer_button"-->
+            <!--app:title="个性换服"-->
+            <!--app:icon="@drawable/ic_little_skin"-->
+            <!--style="@style/RippleBar"/>-->
+
+        <!--<cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout="@layout/view_drawer_button"-->
+            <!--app:title="扫一扫"-->
+            <!--app:icon="@drawable/ic_little_scan"-->
+            <!--style="@style/RippleBar"/>-->
+
+
+        <!--<cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout="@layout/view_drawer_button"-->
+            <!--app:title="音乐闹钟"-->
+            <!--app:icon="@drawable/ic_launcher_background"/>-->
+    </LinearLayout>
+
+    <!--关于-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:textColor="#666"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作者: DeepKolos"
+            android:textColor="#666"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用于: 安卓大作业"
+            android:textColor="#666"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="目的: 了解安卓组件行为细节"
+            android:textColor="#666"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D9D9D9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout="@layout/view_drawer_bottom_button"
+            app:title="夜间"
+            app:icon="@drawable/ic_little_night_mode"
+            style="@style/RippleBarFg"/>
+
+        <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout="@layout/view_drawer_bottom_button"
+            app:title="设置"
+            app:icon="@drawable/ic_little_setting"
+            style="@style/RippleBarFg"/>
+
+        <cn.deepkolos.simplemusic3.Widget.Button.IconTitleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout="@layout/view_drawer_bottom_button"
+            app:title="退出"
+            app:icon="@drawable/ic_little_poweroffpng"
+            style="@style/RippleBarFg"/>
+
+    </LinearLayout>
+</LinearLayout>

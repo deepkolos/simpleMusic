@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconTitleAttrs">
+        <attr name="icon" format="reference"/>
+        <attr name="title" format="string"/>
+        <attr name="count" format="integer"/>
+        <attr name="badge" format="string"/>
+        <attr name="topRightText" format="string"/>
+        <attr name="bottomLeftText" format="string"/>
+        <attr name="layout" format="reference"/>
+    </declare-styleable>
+</resources>

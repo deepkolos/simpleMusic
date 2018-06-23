@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottomBarBg"
+    android:id="@+id/fragment_player_bar_container"
+    style="@style/RippleBarFg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.BottomPlayBar
+            android:id="@+id/fragment_player_bar_bottomPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.Button.PlayPauseButton
+            android:id="@+id/fragment_player_bar_playPauseBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/RippleBtn22"/>
+
+        <cn.deepkolos.simplemusic3.Widget.Button.PlayListButton
+            android:id="@+id/fragment_player_bar_playListBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/RippleBtn22"/>
+    </LinearLayout>
+</LinearLayout>

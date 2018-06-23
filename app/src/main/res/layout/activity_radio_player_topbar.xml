@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topBarHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        android:onClick="backBtnClick"
+        android:src="@drawable/back_btn"
+        style="@style/RippleBtn22"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="@dimen/topBarHeight"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            style="@style/RippleBtn22"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="@dimen/topBarHeight"
+            android:layout_height="wrap_content"
+            style="@style/RippleBtn22"/>
+    </LinearLayout>
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_menu_btn"
+        android:onClick="onMenuBtnClick"
+        style="@style/RippleBtn22"/>
+</RelativeLayout>

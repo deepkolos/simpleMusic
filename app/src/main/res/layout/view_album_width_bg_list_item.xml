@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/songList_album_container"
+    style="@style/RippleBarFg">
+
+    <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        app:radius="3dp"
+        android:id="@+id/songList_album_cover_container">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/songList_album_cover"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_cover"/>
+    </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+    <ImageView
+        android:id="@+id/songList_album_cover_bg"
+        android:layout_toEndOf="@id/songList_album_cover_container"
+        android:layout_width="10dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="7dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_album_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/songList_album_cover_bg"
+        android:layout_toStartOf="@id/songList_album_setting_btn"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songList_album_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我喜欢的音乐"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/songList_album_downloaded_icon"
+                android:visibility="gone"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/songList_album_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1107首"
+                android:textSize="13sp"
+                android:textColor="@color/TextGrey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/songList_album_setting_btn"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/expand_list_item_setting_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        style="@style/RippleBarFg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider"/>
+</RelativeLayout>

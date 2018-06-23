@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/topBarHeight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/activity_album_topBar_bg_blur"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        android:foreground="@color/grey_900_half_opacity"
+        android:layout_gravity="clip_vertical" />
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_album_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBarHeight"
+        android:orientation="horizontal">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="@dimen/topBarHeight"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:onClick="backBtnClick"
+            style="@style/RippleBtn22"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <cn.deepkolos.simplemusic3.Widget.OverRollTextView
+                android:id="@+id/activity_album_topBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textSize="18sp"
+                app:textColor="#FFFFFF"
+                app:text="歌单"/>
+
+            <cn.deepkolos.simplemusic3.Widget.OverRollTextView
+                android:id="@+id/activity_album_topBar_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textSize="10sp"
+                app:textColor="@color/white_50p"
+                app:text="编辑推荐"/>
+        </LinearLayout>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="@dimen/topBarHeight"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topbar_search_btn"
+            android:onClick="onSearchBtnClick"
+            style="@style/RippleBtn22"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="@dimen/topBarHeight"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_btn"
+            android:onClick="onMenuBtnClick"
+            style="@style/RippleBtn22"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/fragment_songList_scrollView"
+    android:background="@color/contentBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/BottomPlayerBarHeight"
+        android:orientation="vertical">
+
+        <cn.deepkolos.simplemusic3.Widget.ListItem.WithCounterView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/RippleBarFg"
+            app:title="本地音乐"
+            app:icon="@drawable/ic_songlist_local_music"
+            android:id="@+id/fragment_songList_local_music_btn"/>
+        <cn.deepkolos.simplemusic3.Widget.ListItem.WithCounterView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/RippleBarFg"
+            app:title="最近播放"
+            app:icon="@drawable/ic_songlist_recently_play"
+            android:id="@+id/fragment_songList_recently_play_btn"/>
+        <cn.deepkolos.simplemusic3.Widget.ListItem.WithCounterView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/RippleBarFg"
+            app:title="下载管理"
+            app:icon="@drawable/ic_songlist_downloaded"
+            android:id="@+id/fragment_songList_download_manage_btn"/>
+        <cn.deepkolos.simplemusic3.Widget.ListItem.WithCounterView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/RippleBarFg"
+            app:title="我的电台"
+            app:icon="@drawable/ic_songlist_my_radio"
+            android:id="@+id/fragment_songList_radio_btn"/>
+        <cn.deepkolos.simplemusic3.Widget.ListItem.WithCounterView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/RippleBarFg"
+            app:title="我的收藏"
+            app:icon="@drawable/ic_songlist_my_collection"
+            android:id="@+id/fragment_songList_collection_btn"/>
+
+        <ExpandableListView
+            android:id="@+id/songList_customList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@null"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RippleBtn22">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@drawable/ripple_22_btn</item>
+    </style>
+
+    <style name="RippleBtn27">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@drawable/ripple_27_btn</item>
+    </style>
+
+    <style name="RippleBarFg">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@drawable/ripple_bar</item>
+    </style>
+
+    <style name="RippleBarBg">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/ripple_bar</item>
+    </style>
+
+    <style name="PressedDarkBar">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@drawable/press_dark_bg</item>
+    </style>
+
+    <style name="PressedLightBar">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@drawable/press_light_bg</item>
+    </style>
+
+    <style name="popupWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/popup_leave_anim</item>
+    </style>
+
+    <style name="noneWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/none_anim</item>
+        <item name="android:windowExitAnimation">@anim/none_anim</item>
+    </style>
+
+    <style name="PopupMenu">
+
+    </style>
+
+    <style name="ScrollBar">
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+
+</resources>

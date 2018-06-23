@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_album_topBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topBarHeight"
+    android:orientation="horizontal"
+    android:background="@color/topBarRed">
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_btn"
+        android:onClick="backBtnClick"
+        style="@style/RippleBtn22"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_local_music_topBar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:text="本地音乐"/>
+    </LinearLayout>
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:id="@+id/activity_local_topbar_search_btn"
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topbar_search_btn"
+        android:onClick="onSearchBtnClick"
+        style="@style/RippleBtn22"/>
+
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:id="@+id/activity_local_topbar_menu_btn"
+        android:layout_width="@dimen/topBarHeight"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_btn"
+        android:onClick="onMenuBtnClick"
+        style="@style/RippleBtn22"/>
+</LinearLayout>

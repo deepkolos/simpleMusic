@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--top bar-->
+    <include layout="@layout/activity_local_music_topbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/topBarHeight">
+
+        <cn.deepkolos.simplemusic3.Widget.TextTabsView
+            android:id="@+id/activity_local_music_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/topBarRed"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_local_music_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!--播放栏-->
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BottomPlayerBarHeight">
+
+        <fragment
+            android:id="@+id/fragment_player_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="cn.deepkolos.simplemusic3.Page.PlayBarFragment"/>
+    </LinearLayout>
+</FrameLayout>

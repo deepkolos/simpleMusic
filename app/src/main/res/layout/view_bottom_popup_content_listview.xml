@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.deepkolos.simplemusic3.Widget.Layout.MaxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_bottom_popup_maxHeight"
+    app:maxHeight="380dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_bottom_popup_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true">
+
+        <!--这里用于插入顶栏-->
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/view_bottom_popup_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:dividerHeight="0px"
+        android:divider="@null"/>
+</cn.deepkolos.simplemusic3.Widget.Layout.MaxLayout>

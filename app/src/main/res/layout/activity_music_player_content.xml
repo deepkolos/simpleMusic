@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/topBarHeight">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+
+        <!--唱片-->
+        <FrameLayout
+            android:id="@+id/activity_music_player_turntable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <!--白色地盘-->
+            <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+                android:layout_marginTop="63dp"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center_horizontal"
+                app:radius="135dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:alpha="0.1"/>
+
+            </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+            <!--唱片 滑动切换-->
+            <cn.deepkolos.simplemusic3.Widget.SimpleViewPager
+                android:id="@+id/activity_music_player_turntable_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="63dp"
+                app:duration="600">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <cn.deepkolos.simplemusic3.Widget.TurntableView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:src="@drawable/play_page_default_cover"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <cn.deepkolos.simplemusic3.Widget.TurntableView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:src="@drawable/play_page_default_cover"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <cn.deepkolos.simplemusic3.Widget.TurntableView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:src="@drawable/play_page_default_cover"/>
+                </LinearLayout>
+            </cn.deepkolos.simplemusic3.Widget.SimpleViewPager>
+
+            <!--留声机手臂-->
+            <cn.deepkolos.simplemusic3.Widget.TurnTableHandView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_music_player_turntable_hand"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="-16dp"/>
+
+            <!--渐变线-->
+            <View
+                android:layout_gravity="center_horizontal"
+                android:layout_width="270dp"
+                android:layout_height="1px"
+                android:background="@drawable/music_player_top_line"/>
+        </FrameLayout>
+
+        <!--歌词-->
+        <FrameLayout
+            android:id="@+id/activity_music_player_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <View
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_volume"/>
+
+                <SeekBar
+                    android:layout_width="294dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:progressDrawable="@drawable/seek_bar_volume_style"
+                    android:thumb="@drawable/ic_seek_bar_volume_btn"
+                    android:progress="10"/>
+            </LinearLayout>
+
+            <!--歌词显示-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="deepkolos"
+                        android:textSize="60sp"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <!--歌词定位线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lyric_indicator"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#9fff"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="00:00"
+                    android:layout_marginEnd="5dp"/>
+            </LinearLayout>
+
+            <!--菜单按钮-->
+            <ImageView
+                android:id="@+id/activity_music_player_lyrics_menu"
+                android:layout_width="54dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/lyric_menu_btn"
+                android:alpha="150"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!--4 btn-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_big_like"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_height="match_parent"
+            android:layout_width="60dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_big_download"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="11dp">
+
+            <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:src="@drawable/ic_big_comment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_height="match_parent"
+            android:layout_width="60dp"
+            android:src="@drawable/ic_big_menu"/>
+    </LinearLayout>
+
+    <!--seek bar-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_music_player_current_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/grey_50p"
+            android:text="00:00"/>
+
+        <SeekBar
+            android:id="@+id/activity_music_player_seekBar"
+            android:layout_width="263dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:progressDrawable="@drawable/seek_bar_progress_style"
+            android:thumb="@drawable/ic_seek_bar_progress_btn"
+            android:progress="10"/>
+
+        <TextView
+            android:id="@+id/activity_music_player_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@color/grey_50p"/>
+    </LinearLayout>
+
+
+    <!--5 btn-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/activity_music_player_modeSwitch_btn"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="11dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_btn_shuffle_selector"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/activity_music_player_prev_btn"
+            android:layout_width="71dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_btn_prev_selector"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/activity_music_player_play_pause_btn"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_btn_play_selector"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/activity_music_player_next_btn"
+            android:layout_width="71dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_btn_next_selector"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/activity_music_player_playlist_btn"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="11dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_btn_playlist_selector"/>
+    </LinearLayout>
+</LinearLayout>

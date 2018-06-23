@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/contentBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/BottomPlayerBarHeight"
+        android:orientation="vertical">
+
+        <!--轮播图-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <View
+                android:paddingTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:background="@color/topBarRed"/>
+            
+            <cn.deepkolos.simplemusic3.Widget.CarouselView
+                android:paddingTop="6dp"
+                android:id="@+id/fragment_recommendation_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"/>
+
+        </FrameLayout>
+
+        <!--4 btn-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:orientation="horizontal">
+
+            <cn.deepkolos.simplemusic3.Widget.Button.CircleIconButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:title="私人FM"
+                app:icon="@drawable/ic_round_radio_btn_selector"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.CircleIconButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:title="每日推荐"
+                app:icon="@drawable/ic_round_calendar_btn_selector"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.CircleIconButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:title="歌单"
+                app:icon="@drawable/ic_round_songlist_btn_selector"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.CircleIconButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:title="排行榜"
+                app:icon="@drawable/ic_round_rate_board_btn_selector"
+                android:focusable="true"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:text="推荐歌单"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                app:title="test"
+                app:badge="VIP"
+                app:bottomLeftText="看1107"
+                app:icon="@drawable/ic_test_cover"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                app:topRightText="听1107"
+                app:title="deepkolos"
+                app:icon="@drawable/ic_test_cover"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:title="test"
+                app:icon="@drawable/ic_test_cover"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                app:title="test"
+                app:badge="VIP"
+                app:bottomLeftText="看1107"
+                app:icon="@drawable/ic_test_cover"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                app:topRightText="听1107"
+                app:title="deepkolos"
+                app:icon="@drawable/ic_test_cover"/>
+
+            <cn.deepkolos.simplemusic3.Widget.Button.RectangleIconButton
+                android:contentDescription="@string/hotList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:title="test"
+                app:icon="@drawable/ic_test_cover"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--唱片 胶片-->
+    <cn.deepkolos.simplemusic3.Widget.SquareImageView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/play_page_disc" />
+
+    <!--唱片 封面-->
+    <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+        android:layout_marginTop="46dp"
+        android:layout_width="178dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        app:radius="89dp">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:id="@+id/view_turntable_cover"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"/>
+
+    </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+</FrameLayout>

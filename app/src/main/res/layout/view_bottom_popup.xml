@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <View
+        android:id="@+id/view_bottom_popup_mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/view_bottom_popup"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--app:topLeftRadius="10dp"-->
+        <!--app:topRightRadius="10dp">-->
+
+        <!--<cn.deepkolos.simplemusic3.Widget.Layout.MaxLayout-->
+            <!--android:id="@+id/view_bottom_popup_maxHeight"-->
+            <!--app:maxHeight="350dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--&lt;!&ndash;这里用于插入顶栏&ndash;&gt;-->
+            <!--<FrameLayout-->
+                <!--android:id="@+id/view_bottom_popup_topBar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#F3F3F3"-->
+                    <!--android:text="topBar"-->
+                    <!--android:textSize="30sp" />-->
+            <!--</FrameLayout>-->
+
+            <!--<ScrollView-->
+                <!--android:id="@+id/view_bottom_popup_scrollView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<FrameLayout-->
+                    <!--android:id="@+id/view_bottom_popup_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--&lt;!&ndash;这里插入滚动内容&ndash;&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/white"-->
+                        <!--android:text="文字,现在我都不想说用你的名字作为占位符了..."-->
+                        <!--android:textSize="100sp" />-->
+
+                <!--</FrameLayout>-->
+            <!--</ScrollView>-->
+        <!--</cn.deepkolos.simplemusic3.Widget.Layout.MaxLayout>-->
+    <!--</cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>-->
+</FrameLayout>

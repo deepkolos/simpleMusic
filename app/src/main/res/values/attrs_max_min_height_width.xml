@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaxMinHeightWidth">
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="maxWidth" format="dimension"/>
+        <attr name="minHeight" format="dimension"/>
+        <attr name="minWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/topBarHeight">
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:radius="2dp">
+
+            <cn.deepkolos.simplemusic3.Widget.SquareImageView
+                android:layout_width="313dp"
+                android:layout_height="wrap_content" />
+        </cn.deepkolos.simplemusic3.Widget.Layout.ClipFrameLayout>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="牌楼口岸"
+            android:textSize="19sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="简"
+            android:textSize="15sp"
+            android:textColor="#B8B7B8"/>
+    </LinearLayout>
+
+    <!--progress bar-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"/>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:layout_width="263dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"/>
+
+    </LinearLayout>
+
+    <!--5 btn-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="11dp"/>
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="71dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content" />
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="71dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+        <cn.deepkolos.simplemusic3.Widget.SquareImageView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="11dp" />
+    </LinearLayout>
+</LinearLayout>

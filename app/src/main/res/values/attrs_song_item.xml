@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SongView">
+        <attr name="hasSQ" format="boolean"/>
+        <attr name="hasDownloaded" format="boolean"/>
+        <attr name="hasMVToPlay" format="boolean"/>
+        <attr name="singer" format="string"/>
+        <attr name="name" format="string"/>
+        <attr name="index" format="string"/>
+        <attr name="isPlaying" format="boolean"/>
+        <attr name="noIndexOrPlayingIcon" format="boolean"/>
+    </declare-styleable>
+</resources>
