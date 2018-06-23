@@ -33,7 +33,7 @@
 
 ### 实现的各类widget
 
-
+<img width = "350" src="https://s1.ax1x.com/2018/06/23/P98U9U.png" alt="P98U9U.png" border="0" />
 
 ### 感谢
 
